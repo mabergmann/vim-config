@@ -15,10 +15,10 @@ We want to type as few as possible, so vim automatically adds pairs for \{, \( a
 
 This configuration uses [vundle](https://github.com/VundleVim/Vundle.vim) as package manager and includes the following plugins:
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
-- [lightline](https://github.com/itchyny/lightline.vim')
-- [vim-surround](https://github.com/tpope/vim-surround')
-- [nerdtree](https://github.com/scrooloose/nerdtree')
-- [ale](https://github.com/w0rp/ale')
+- [lightline](https://github.com/itchyny/lightline.vim)
+- [vim-surround](https://github.com/tpope/vim-surround)
+- [nerdtree](https://github.com/scrooloose/nerdtree)
+- [ale](https://github.com/w0rp/ale)
 
 The default theme is [gruvbox](https://github.com/morhetz/gruvbox)
 
