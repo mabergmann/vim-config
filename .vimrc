@@ -12,21 +12,25 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 
-Plugin 'morhetz/gruvbox'
-
 Plugin 'itchyny/lightline.vim'
 
 Plugin 'tpope/vim-surround'
 
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'dracula/vim'
+
 Plugin 'w0rp/ale'
+
+Plugin 'morhetz/gruvbox'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " requiredsyntax enable
 
 set nu rnu
 let g:gruvbox_italic=1
+syntax on
 colorscheme gruvbox
 set background=dark
 

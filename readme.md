@@ -37,4 +37,4 @@ The default theme is [gruvbox](https://github.com/morhetz/gruvbox)
 ### Cloning and running installation script
 	git clone https://github.com/mabergmann/vim-config ~/.vim
 	chmod +x ~/.vim/install.sh
-	~/.vim/install.sh
+	~/.vim/install.sh # This might take a while
