@@ -6,10 +6,10 @@ This is my vim configuration. It's been developed according to my needs. Feel fr
 
 ### Shortcuts
 - Space is maped as leader key.
-- <space>s reloads the configuration file.
-- <C-o> shows / hides NerdTree
+- \<space\>s reloads the configuration file.
+- \<C-o\> shows / hides NerdTree
 
-We want to type as few as possible, so vim automatically adds pairs for \{ \( and \[
+We want to type as few as possible, so vim automatically adds pairs for \{, \( and \[
 
 ### Plugins
 
