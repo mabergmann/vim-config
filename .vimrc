@@ -31,7 +31,7 @@ filetype plugin indent on    " requiredsyntax enable
 set nu rnu
 let g:gruvbox_italic=1
 syntax on
-colorscheme gruvbox
+silent! colorscheme gruvbox
 set background=dark
 
 let mapleader = " "
