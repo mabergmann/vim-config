@@ -28,9 +28,10 @@ The default theme is [gruvbox](https://github.com/morhetz/gruvbox)
 - Git
 - Clang compiler
 - Flake 8
+- CMake
 
 ### Arch Linux
-	sudo pacman -S git clang 
+	sudo pacman -S git clang cmake
 	yay -S flake8
 
 ### Cloning and running installation script
