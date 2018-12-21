@@ -24,6 +24,10 @@ Plugin 'romainl/Apprentice'
 
 Plugin 'Raimondi/delimitMate'
 
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'airblade/vim-gitgutter'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " requiredsyntax enable
@@ -39,3 +43,12 @@ map <C-o> :NERDTreeToggle<CR>
 let g:flake8_show_in_file=1
 
 let delimitMate_expand_cr = 1
+
+" Let's make it easier to work with splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set splitbelow
+set splitright

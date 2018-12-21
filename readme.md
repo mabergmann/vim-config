@@ -8,7 +8,7 @@ This is my vim configuration. It's been developed according to my needs. Feel fr
 - Space is maped as leader key.
 - \<space\>s reloads the configuration file.
 - \<C-o\> shows / hides NerdTree
-
+- \<C-{h,j,k,l}\> to move between splits
 ### Plugins
 
 This configuration uses [vundle](https://github.com/VundleVim/Vundle.vim) as package manager and includes the following plugins:
@@ -18,6 +18,8 @@ This configuration uses [vundle](https://github.com/VundleVim/Vundle.vim) as pac
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 - [ale](https://github.com/w0rp/ale)
 - [delimitMate](https://github.com/Raimondi/delimitMate)
+- [vim-fugitive](https://github.com/tpope/vim-fugitive)
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 
 The default theme is [Apprentice](https://github.com/romainl/Apprentice)
 
