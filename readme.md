@@ -9,8 +9,6 @@ This is my vim configuration. It's been developed according to my needs. Feel fr
 - \<space\>s reloads the configuration file.
 - \<C-o\> shows / hides NerdTree
 
-We want to type as few as possible, so vim automatically adds pairs for \{, \( and \[
-
 ### Plugins
 
 This configuration uses [vundle](https://github.com/VundleVim/Vundle.vim) as package manager and includes the following plugins:
@@ -19,8 +17,9 @@ This configuration uses [vundle](https://github.com/VundleVim/Vundle.vim) as pac
 - [vim-surround](https://github.com/tpope/vim-surround)
 - [nerdtree](https://github.com/scrooloose/nerdtree)
 - [ale](https://github.com/w0rp/ale)
+- [delimitMate](https://github.com/Raimondi/delimitMate)
 
-The default theme is [gruvbox](https://github.com/morhetz/gruvbox)
+The default theme is [Apprentice](https://github.com/romainl/Apprentice)
 
 ## Installation Guide
 
