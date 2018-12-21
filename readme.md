@@ -20,6 +20,7 @@ This configuration uses [vundle](https://github.com/VundleVim/Vundle.vim) as pac
 - [delimitMate](https://github.com/Raimondi/delimitMate)
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [editorconfig](https://github.com/editorconfig/editorconfig-vim)
 
 The default theme is [Apprentice](https://github.com/romainl/Apprentice)
 

@@ -28,6 +28,8 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'airblade/vim-gitgutter'
 
+Plugin 'editorconfig/editorconfig-vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " requiredsyntax enable
@@ -39,6 +41,7 @@ silent! colorscheme apprentice
 let mapleader = " "
 map <leader>s :source ~/.vimrc<CR>
 map <C-o> :NERDTreeToggle<CR>
+map <leader>gs :Gstatus<CR>
 
 let g:flake8_show_in_file=1
 
