@@ -21,6 +21,7 @@ This configuration uses [vundle](https://github.com/VundleVim/Vundle.vim) as pac
 - [vim-fugitive](https://github.com/tpope/vim-fugitive)
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [editorconfig](https://github.com/editorconfig/editorconfig-vim)
+- [NERDcommenter](https://github.com/scrooloose/nerdcommenter)
 
 The default theme is [Apprentice](https://github.com/romainl/Apprentice)
 
