@@ -22,6 +22,10 @@ This configuration uses [vundle](https://github.com/VundleVim/Vundle.vim) as pac
 - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [editorconfig](https://github.com/editorconfig/editorconfig-vim)
 - [NERDcommenter](https://github.com/scrooloose/nerdcommenter)
+- [vim-repeat](https://github.com/tpope/vim-repeat)
+- [tabular](https://github.com/godlygeek/tabular)
+- [targets](https://github.com/wellle/targets.vim)
+- [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack)
 
 The default theme is [Apprentice](https://github.com/romainl/Apprentice)
 

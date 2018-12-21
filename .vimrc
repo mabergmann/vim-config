@@ -32,6 +32,14 @@ Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'scrooloose/nerdcommenter'
 
+Plugin 'tpope/vim-repeat'
+
+Plugin 'godlygeek/tabular'
+
+Plugin 'wellle/targets.vim'
+
+Plugin 'maxbrunsfeld/vim-yankstack'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " requiredsyntax enable
@@ -55,5 +63,20 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+if exists(":Tabularize")
+    nmap <Leader>a= :Tabularize /=<CR>
+    vmap <Leader>a= :Tabularize /=<CR>
+    nmap <Leader>a: :Tabularize /:\zs<CR>
+    vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
+
 set splitbelow
 set splitright
+
+" fix meta-keys which generate <Esc>a .. <Esc>z
+let c='a'
+while c <= 'z'
+  exec "set <M-".toupper(c).">=\e".c
+  exec "imap \e".c." <M-".toupper(c).">"
+  let c = nr2char(1+char2nr(c))
+endw
