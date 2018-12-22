@@ -9,6 +9,7 @@ This is my vim configuration. It's been developed according to my needs. Feel fr
 - \<space\>s reloads the configuration file.
 - \<C-o\> shows / hides NerdTree
 - \<C-{h,j,k,l}\> to move between splits
+- \<Leader\>p and \<leader\>P to navigate through the yankstack
 ### Plugins
 
 This configuration uses [vundle](https://github.com/VundleVim/Vundle.vim) as package manager and includes the following plugins:
