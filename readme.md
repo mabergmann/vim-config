@@ -26,6 +26,11 @@ This configuration uses [vundle](https://github.com/VundleVim/Vundle.vim) as pac
 - [tabular](https://github.com/godlygeek/tabular)
 - [targets](https://github.com/wellle/targets.vim)
 - [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack)
+- [vim-easymotion](https://github.com/easymotion/vim-easymotion)
+- [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils)
+- [tlib\_vim](https://github.com/tomtom/tlib_vim)
+- [vim-snipmate](https://github.com/garbas/vim-snipmate)
+- [vim-polyglot](https://github.com/sheerun/vim-polyglot)
 
 The default theme is [Apprentice](https://github.com/romainl/Apprentice)
 

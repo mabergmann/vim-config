@@ -40,6 +40,16 @@ Plugin 'wellle/targets.vim'
 
 Plugin 'maxbrunsfeld/vim-yankstack'
 
+Plugin 'easymotion/vim-easymotion'
+
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+
+Plugin 'honza/vim-snippets'
+
+Plugin 'sheerun/vim-polyglot'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " requiredsyntax enable
