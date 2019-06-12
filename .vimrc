@@ -18,8 +18,6 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'scrooloose/nerdtree'
 
-Plugin 'w0rp/ale'
-
 Plugin 'romainl/Apprentice'
 
 Plugin 'Raimondi/delimitMate'
@@ -49,6 +47,7 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
 Plugin 'sheerun/vim-polyglot'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -85,3 +84,16 @@ set splitright
 
 nmap <leader>P <M-P>
 nmap <leader>p <M-p>
+
+" custom text-object for numerical values
+function! Numbers()
+    call search('\d\([^0-9\.]\|$\)', 'cW')
+    normal v
+    call search('\(^\|[^0-9\.]\d\)', 'becW')
+endfunction
+xnoremap in :<C-u>call Numbers()<CR>
+onoremap in :normal vin<CR>
+
+let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+
