@@ -16,17 +16,9 @@ Plugin 'itchyny/lightline.vim'
 
 Plugin 'tpope/vim-surround'
 
-Plugin 'scrooloose/nerdtree'
-
 Plugin 'romainl/Apprentice'
 
 Plugin 'Raimondi/delimitMate'
-
-Plugin 'tpope/vim-fugitive'
-
-Plugin 'airblade/vim-gitgutter'
-
-Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'scrooloose/nerdcommenter'
 
@@ -38,12 +30,9 @@ Plugin 'wellle/targets.vim'
 
 Plugin 'maxbrunsfeld/vim-yankstack'
 
-Plugin 'easymotion/vim-easymotion'
-
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-
 Plugin 'honza/vim-snippets'
 
 Plugin 'sheerun/vim-polyglot'
@@ -59,8 +48,10 @@ silent! colorscheme apprentice
 
 let mapleader = " "
 map <leader>s :source ~/.vimrc<CR>
-map <C-o> :NERDTreeToggle<CR>
-map <leader>gs :Gstatus<CR>
+
+" Yankstack config
+nmap <leader>p <Plug>yankstack_substitute_older_paste
+nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 let g:flake8_show_in_file=1
 
@@ -72,11 +63,29 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+let g:lightline = {
+  \     'active': {
+  \         'left': [['mode', 'paste' ], ['readonly', 'filename', 'modified']],
+  \         'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding']]
+  \     }
+  \ }
+
 if exists(":Tabularize")
     nmap <Leader>a= :Tabularize /=<CR>
     vmap <Leader>a= :Tabularize /=<CR>
     nmap <Leader>a: :Tabularize /:\zs<CR>
     vmap <Leader>a: :Tabularize /:\zs<CR>
+    nmap <Leader>a, :Tabularize /,\zs<CR>
+    vmap <Leader>a, :Tabularize /,\zs<CR>
+    noremap <silent> <leader>t: :Tabularize /:<CR>
+noremap <silent> <leader>t= :Tabularize /=<CR>
+noremap <silent> <leader>t, :Tabularize /,<CR>
+noremap <silent> <leader>t{ :Tabularize /{<CR>
+noremap <silent> <leader>t" :Tabularize /"<CR>
+noremap <silent> <leader>t' :Tabularize /'<CR>
+noremap <silent> <leader>t[ :Tabularize /[<CR>
+noremap <silent> <leader>t/ :Tabularize ///<CR>
+noremap <silent> <leader>t\| :Tabularize /\|<CR>
 endif
 
 set splitbelow
@@ -96,4 +105,5 @@ onoremap in :normal vin<CR>
 
 let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+
 
